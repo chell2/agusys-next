@@ -1,16 +1,12 @@
+const plugin = require('tailwindcss/plugin');
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'dark',
   plugins: [require('daisyui')],
   daisyui: {
     styled: true,
-    themes: [
-      'emerald', // first one will be the default theme
-      'dark',
-      'forest',
-      'synthwave',
-    ],
+    themes: ['cupcake', 'emerald'],
     base: true,
     utils: true,
     logs: true,
