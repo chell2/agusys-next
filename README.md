@@ -1,6 +1,6 @@
-# agusys-WEB
+# agusys-web
 
-## WEB 版あぐしす
+## web 版あぐしす
 
 ### 用途
 
@@ -14,7 +14,7 @@
 
 ### URL
 
-https://qr-official.line.me/sid/L/078pbmca.png
+https://agusys.vercel.app/
 
 ### 開発環境
 
