@@ -5,7 +5,7 @@ const Login = () => {
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
             <figure>
-              <img alt="logo" src="../../public/logo.png" className="rounded-xl" />
+              <img alt="logo" src="../../public/images/logo.png" className="rounded-xl" />
             </figure>
             <div className="form-control">
               <label className="label">
