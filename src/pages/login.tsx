@@ -1,11 +1,20 @@
+import Image from 'next/image';
+
 const Login = () => {
   return (
     <>
       <div className="hero min-h-screen bg-base-200">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
-            <figure>
-              <img alt="logo" src="../../public/images/logo.png" className="rounded-xl" />
+            <figure className="justify-center card-actions">
+              <Image
+                alt="logo"
+                src="/images/logo.png"
+                layout="fixed"
+                width={180}
+                height={180}
+                className="mask mask-hexagon-2"
+              />
             </figure>
             <div className="form-control">
               <label className="label">

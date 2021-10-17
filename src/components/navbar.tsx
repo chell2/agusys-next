@@ -23,13 +23,16 @@ const Navbar = () => {
             className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 text-neutral"
           >
             <li>
-              <a>Item 1</a>
+              <a>ホーム</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>報告データ</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>農地別一覧</a>
+            </li>
+            <li>
+              <a>全体地図</a>
             </li>
           </ul>
         </div>
