@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Main from '../components/main';
 import Stat from '../components/stat';
 
@@ -25,7 +26,9 @@ const Drawer = () => {
             <a>全体地図</a>
           </li>
           <li>
-            <a href="/login">ログアウト</a>
+            <Link href="/login">
+              <a>ログアウト</a>
+            </Link>
           </li>
         </ul>
       </div>

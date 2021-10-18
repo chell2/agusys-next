@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Login = () => {
   return (
@@ -45,11 +46,13 @@ const Login = () => {
                 </a>
               </label>
             </div>
-            <a href="/.">
-              <div className="form-control mt-5">
-                <input type="button" value="Login" className="btn btn-primary" />
-              </div>
-            </a>
+            <Link href="/.">
+              <a>
+                <div className="form-control mt-5">
+                  <input type="button" value="Login" className="btn btn-primary" />
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
