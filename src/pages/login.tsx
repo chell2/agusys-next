@@ -41,9 +41,11 @@ const Login = () => {
                 <input type="checkbox" className="checkbox checkbox-xs checkbox-accent" />
               </label>
               <label className="label">
-                <a href="/resetpw" className="label-text-alt text-primary hover:text-primary-focus">
-                  Forgot password?
-                </a>
+                <Link href="/resetpw">
+                  <a className="label-text-alt text-primary hover:text-primary-focus">
+                    Forgot password?
+                  </a>
+                </Link>
               </label>
             </div>
             <Link href="/.">
