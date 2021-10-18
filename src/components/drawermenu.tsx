@@ -1,9 +1,12 @@
 import Main from '../components/main';
+import Stat from '../components/stat';
+
 const Drawer = () => {
   return (
     <div className="bg-base-200 drawer drawer-mobile h-screen">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="flex flex-col items-center drawer-content">
+        <Stat />
         <Main />
       </div>
       <div className="drawer-side">
@@ -20,6 +23,9 @@ const Drawer = () => {
           </li>
           <li>
             <a>全体地図</a>
+          </li>
+          <li>
+            <a href="/login">ログアウト</a>
           </li>
         </ul>
       </div>

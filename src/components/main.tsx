@@ -2,7 +2,7 @@ import Image from 'next/image';
 const Main = () => {
   return (
     <>
-      <div className="overflow-x-auto mt-20 shadow-2xl rounded-lg">
+      <div className="overflow-x-auto mt-10 shadow-2xl rounded-lg">
         <table className="table w-full">
           <thead>
             <tr>
@@ -26,7 +26,7 @@ const Main = () => {
                     <div className="w-12 h-12 mask mask-squircle">
                       <Image
                         src="/images/logo.png"
-                        alt="Avatar Tailwind CSS Component"
+                        alt="photo"
                         layout="fixed"
                         width={80}
                         height={80}
@@ -61,7 +61,7 @@ const Main = () => {
                     <div className="w-12 h-12 mask mask-squircle">
                       <Image
                         src="/images/logo.png"
-                        alt="Avatar Tailwind CSS Component"
+                        alt="photo"
                         layout="fixed"
                         width={80}
                         height={80}
@@ -96,7 +96,7 @@ const Main = () => {
                     <div className="w-12 h-12 mask mask-squircle">
                       <Image
                         src="/images/logo.png"
-                        alt="Avatar Tailwind CSS Component"
+                        alt="photo"
                         layout="fixed"
                         width={80}
                         height={80}
@@ -131,7 +131,7 @@ const Main = () => {
                     <div className="w-12 h-12 mask mask-squircle">
                       <Image
                         src="/images/logo.png"
-                        alt="Avatar Tailwind CSS Component"
+                        alt="photo"
                         layout="fixed"
                         width={80}
                         height={80}

@@ -40,14 +40,16 @@ const Login = () => {
                 <input type="checkbox" className="checkbox checkbox-xs checkbox-accent" />
               </label>
               <label className="label">
-                <a href="#" className="label-text-alt text-primary hover:text-primary-focus">
+                <a href="/resetpw" className="label-text-alt text-primary hover:text-primary-focus">
                   Forgot password?
                 </a>
               </label>
             </div>
-            <div className="form-control mt-5">
-              <input type="button" value="Login" className="btn btn-primary" />
-            </div>
+            <a href="/.">
+              <div className="form-control mt-5">
+                <input type="button" value="Login" className="btn btn-primary" />
+              </div>
+            </a>
           </div>
         </div>
       </div>

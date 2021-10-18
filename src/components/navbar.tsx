@@ -34,6 +34,9 @@ const Navbar = () => {
             <li>
               <a>全体地図</a>
             </li>
+            <li>
+              <a href="/login">ログアウト</a>
+            </li>
           </ul>
         </div>
       </div>
