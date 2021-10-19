@@ -1,6 +1,10 @@
-# agusys-web
+# agusys-Web
 
-## web 版あぐしす
+## Web 版あぐしす
+
+<div align="center">
+    <img src="public/images/screen1.png" alt="logo">
+</div>
 
 ### 用途
 
@@ -9,12 +13,11 @@
 ### できること
 
 - 農地に紐づく写真およびテキストの表示（予定）
-- 地図の表示（予定）
 - CSV データのダウンロード（予定）
 
 ### URL
 
-https://agusys.vercel.app/
+:seedling: https://agusys.vercel.app/
 
 ### 開発環境
 
