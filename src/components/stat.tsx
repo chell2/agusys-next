@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const Stat = () => {
+export default function Stat() {
   return (
     <div className="overflow-x-auto mt-5 shadow-xl rounded-lg">
       <div className="w-full shadow stats">
@@ -21,8 +21,8 @@ const Stat = () => {
             </svg>
           </div>
           <div className="stat-title">申請件数</div>
-          <div className="stat-value text-primary">25.6件</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="stat-value text-primary">456件</div>
+          <div className="stat-desc">15% more than last year</div>
         </div>
         <div className="stat">
           <div className="stat-figure text-info">
@@ -41,8 +41,8 @@ const Stat = () => {
             </svg>
           </div>
           <div className="stat-title">被害面積</div>
-          <div className="stat-value text-info">2.6ha</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="stat-value text-info">20.6ha</div>
+          <div className="stat-desc">21% more than last year</div>
         </div>
         <div className="stat">
           <div className="stat-figure text-info">
@@ -61,10 +61,9 @@ const Stat = () => {
           </div>
           <div className="stat-value">26%</div>
           <div className="stat-title">農地に占める割合</div>
-          <div className="stat-desc text-info">31 tasks remaining</div>
+          <div className="stat-desc text-info">旧4町含む</div>
         </div>
       </div>
     </div>
   );
-};
-export default Stat;
+}

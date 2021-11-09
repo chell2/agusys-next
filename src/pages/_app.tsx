@@ -1,11 +1,14 @@
 import '../styles/globals.css';
+import { Provider } from 'next-auth/client';
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
-      <Component {...pageProps} />
+      <Provider session={pageProps.session}>
+        <Component {...pageProps} />
+      </Provider>
     </ThemeProvider>
   );
 }

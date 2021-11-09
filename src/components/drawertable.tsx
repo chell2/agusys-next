@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import Pagination from '../components/pagination';
-import StatButton from '../components/statbutton';
 import Table from './maintable';
-import MiniStatButton from './ministatbutton';
+import MiniStat from './ministat';
 import MiniTable from './minitable';
+import Pagination from './pagination';
+import Stat from './stat';
 
 export default function Drawer(): JSX.Element {
   return (
@@ -11,12 +11,12 @@ export default function Drawer(): JSX.Element {
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="flex flex-col items-center justify-start drawer-content">
         <div className="hidden text-xs text-center lg:block">
-          <StatButton />
+          <Stat />
           <Table />
           <Pagination />
         </div>
         <div className="text-xs text-center lg:hidden">
-          <MiniStatButton />
+          <MiniStat />
           <MiniTable />
           <Pagination />
         </div>
@@ -26,12 +26,12 @@ export default function Drawer(): JSX.Element {
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
           <li>
             <Link href="/">
-              <a className="active">ホーム</a>
+              <a>ホーム</a>
             </Link>
           </li>
           <li>
             <Link href="/reportpage">
-              <a>報告一覧</a>
+              <a className="active">報告一覧</a>
             </Link>
           </li>
           <li>

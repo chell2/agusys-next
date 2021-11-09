@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Drawer from '../components/drawermenu';
+import Drawer from '../components/drawertable';
 import Navbar from '../components/navbar';
 
 export const siteTitle = 'agusys';
 
-export default function Home() {
+export default function ReportPage() {
   return (
     <>
       <Head>

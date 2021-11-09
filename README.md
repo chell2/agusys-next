@@ -12,12 +12,13 @@
 
 ### できること
 
-- 農地に紐づく写真およびテキストの表示（予定）
-- CSV データのダウンロード（予定）
+- 農地に紐づく報告事項の表示
+- 農地地図の閲覧（予定）
+- CSV データのダウンロード
 
 ### URL
 
-:seedling: https://agusys.vercel.app/
+:seedling: https://agusys.me/
 
 ### 開発環境
 

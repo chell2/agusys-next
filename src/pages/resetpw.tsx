@@ -1,8 +1,13 @@
+import Head from 'next/head';
 import Link from 'next/link';
+import { siteTitle } from '../pages/index';
 
-const PwChange = () => {
+export default function resetPw() {
   return (
     <>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
       <div className="hero min-h-screen bg-base-200">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
@@ -58,5 +63,4 @@ const PwChange = () => {
       </div>
     </>
   );
-};
-export default PwChange;
+}

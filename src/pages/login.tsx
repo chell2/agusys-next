@@ -1,9 +1,14 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { siteTitle } from './index';
 
-const Login = () => {
+export default function Login() {
   return (
     <>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
       <div className="hero min-h-screen bg-base-200">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
@@ -32,7 +37,7 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="password"
                 className="input input-bordered focus:ring-2 focus:ring-primary"
               />
@@ -60,5 +65,81 @@ const Login = () => {
       </div>
     </>
   );
-};
-export default Login;
+}
+
+// import { signIn, signOut, useSession } from 'next-auth/client';
+
+// export default function Home() {
+//   const [session, loading] = useSession();
+
+//   if (loading) {
+//     return <div>Loading...</div>;
+//   }
+
+//   return (
+//     <div>
+//       {session && (
+//         <>
+//           Signed in as {session.user.name} <br />
+//           <button onClick={signOut}>Sign out</button>
+//         </>
+//       )}
+//       {!session && (
+//         <>
+//           Not signed in <br />
+//           <button onClick={signIn}>Sign in</button>
+//         </>
+//       )}
+//     </div>
+//   );
+// }
+
+// import { getCsrfToken, useSession, signOut } from 'next-auth/client';
+// import { useRouter } from 'next/router';
+
+// const LoginPage = ({ csrfToken }) => {
+//   const { error } = useRouter().query;
+//   const [session] = useSession();
+
+//   return (
+//     <div>
+//       <h1>カスタムログインページ</h1>
+//       {session ? (
+//         // ログイン状態の場合。ユーザー名、ログアウトボタンを表示。
+//         <>
+//           <div>ユーザー：{session.user?.name}</div>
+//           <button onClick={signOut}>ログアウト</button>
+//         </>
+//       ) : (
+//         // ログアウト状態の場合。入力フォームを表示。
+//         <form method="post" action="/api/auth/callback/credentials">
+//           <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
+//           <label>
+//             <div>ログインID</div>
+//             <input name="login" />
+//           </label>
+//           <label>
+//             <div>パスワード</div>
+//             <input name="password" type="password" />
+//           </label>
+//           <div>
+//             <button type="submit">ログイン</button>
+//           </div>
+//           {/* ログイン失敗後、エラーメッセージを表示。*/}
+//           {error && <div>ログインID又はパスワードが間違っています。</div>}
+//         </form>
+//       )}
+//     </div>
+//   );
+// };
+
+// // POSTリクエスト(サインイン・サインアウトなど)に必要なCSRFトークンを返却する。
+// export const getServerSideProps = async (context) => {
+//   return {
+//     props: {
+//       csrfToken: await getCsrfToken(context),
+//     },
+//   };
+// };
+
+// export default LoginPage;
