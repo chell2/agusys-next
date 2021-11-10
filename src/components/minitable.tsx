@@ -14,8 +14,8 @@ export default function MiniTable(): JSX.Element {
           <thead>
             <tr>
               <th></th>
-              <th>項目</th>
-              <th>農地住所</th>
+              <th>種別・報告日</th>
+              <th>農地住所（緯度/経度）</th>
               <th></th>
             </tr>
           </thead>
@@ -159,8 +159,8 @@ export default function MiniTable(): JSX.Element {
           <tfoot>
             <tr>
               <th></th>
-              <th>項目</th>
-              <th>農地住所</th>
+              <th>種別・報告日</th>
+              <th>農地住所（緯度/経度）</th>
               <th></th>
             </tr>
           </tfoot>

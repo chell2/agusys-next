@@ -15,10 +15,10 @@ export default function Table(): JSX.Element {
           <thead>
             <tr>
               <th></th>
-              <th>項目</th>
-              <th>農地住所</th>
-              <th></th>
-              <th>作物</th>
+              <th>種別・報告日</th>
+              <th>農地住所（緯度/経度）</th>
+              <th>写真</th>
+              <th>作物名</th>
               <th></th>
             </tr>
           </thead>
@@ -257,9 +257,10 @@ export default function Table(): JSX.Element {
           <tfoot>
             <tr>
               <th></th>
-              <th>項目</th>
-              <th>農地住所</th>
-              <th>作物</th>
+              <th>種別・報告日</th>
+              <th>農地住所（緯度/経度）</th>
+              <th>写真</th>
+              <th>作物名</th>
               <th></th>
             </tr>
           </tfoot>
